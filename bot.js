@@ -14,7 +14,7 @@ client.on('message', message => {
       
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
-        if(message.content.startsWith(prefix + 'ألامر')) {
+        if(message.content.startsWith(prefix + 'say')) {
             message.channel.send(''+x);
                 message.delete(999)
         }
